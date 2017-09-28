@@ -1,3 +1,4 @@
+@canary
 Feature: Canary test
   Scenario: Google
     Given I am on "http://www.google.com"
