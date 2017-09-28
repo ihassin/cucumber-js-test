@@ -7,14 +7,13 @@ defineSupportCode(function({Given, When, Then}) {
         return this.driver.get('http://localhost:3001');
     });
 
-    When('I book a room', function (callback) {
-        this.driver.findElement(By.name('Bookit'))
-            .click();
+    When('I book a room', function () {
+        this.driver.findElement(By.id('bookit')).click();
     });
 
-    Then('It\'s booked', function (callback) {
-        var xpath = "//*[contains(text(),'Booked')]";
+    Then('It\'s booked', function () {
+        var xpath = "//*[contains(text(),'SERVER IS ALIVE!')]";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
-        return this.driver.wait(condition, 5000);
+        return this.driver.wait(condition, 4000);
     });
 });
