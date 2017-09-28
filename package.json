@@ -1,0 +1,16 @@
+{
+  "name": "cucumber-js-test",
+  "version": "1.0.0",
+  "description": "cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/cucumber/bin/cucumber.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "cucumber": "^3.0.3",
+    "selenium-webdriver": "^3.5.0"
+  }
+}
