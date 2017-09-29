@@ -12,8 +12,8 @@ defineSupportCode(function({Given, When, Then}) {
     });
 
     Then('It\'s booked', function () {
-        var xpath = "//*[contains(text(),'SERVER IS ALIVE!')]";
+        var xpath = "//*[contains(text(),'Booked!')]";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
-        return this.driver.wait(condition, 4000);
+        return this.driver.wait(condition, 2000);
     });
 });
